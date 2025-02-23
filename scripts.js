@@ -57,3 +57,11 @@ const containsS = names.map(name => name.includes('S'));
 console.log(containsS);
 const anyS = names.some(name => name.includes('S'));
 console.log(anyS);
+
+
+// 7. Creating object Mapping 
+const nameProvinceMapping = names.reduce((acc, name, index) => {
+  acc[name] = provinces[index];
+  return acc;
+}, {});
+console.log(nameProvinceMapping);
