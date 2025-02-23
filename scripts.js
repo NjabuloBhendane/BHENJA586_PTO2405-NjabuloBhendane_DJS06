@@ -51,3 +51,9 @@ console.log(sortedProvinces);
 //5. Filter Cape 
 const filteredProvinces = provinces.filter(province => !province.includes("Cape"));
 console.log(filteredProvinces.length);
+
+//6.Finding S
+const containsS = names.map(name => name.includes('S'));
+console.log(containsS);
+const anyS = names.some(name => name.includes('S'));
+console.log(anyS);
